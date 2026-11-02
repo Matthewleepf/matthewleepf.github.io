@@ -3,6 +3,14 @@
    ============================================ */
 
 @font-face {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/LibreBaskerville.woff2") format("woff2");
+}
+
+@font-face {
   font-family: "Newsreader";
   font-style: normal;
   font-weight: 100 900;
@@ -62,9 +70,9 @@
   --color-code-bg: #ebe8df;
 
   /* Typography — serif for voice, sans for UI, mono for structure */
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-serif: "Newsreader", "Source Serif 4", Georgia, "Times New Roman", "Songti SC", "SimSun", "STSong", serif;
-  --font-mono: "JetBrains Mono", "SF Mono", "Fira Code", Menlo, Consolas, monospace;
+  --font-serif: "Libre Baskerville", Georgia, "Times New Roman", "Songti SC", "SimSun", "STSong", serif;
+  --font-sans: var(--font-serif);
+  --font-mono: var(--font-serif);
 
   /* Type scale */
   --text-xs:   0.75rem;   /* 12px */
@@ -543,6 +551,33 @@ body strong {
   margin: 0;
 }
 
+/* Cross-document fades keep normal links, history and page scripts intact. */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 380ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+::view-transition-old(root) {
+  animation-name: page-fade-out;
+}
+
+::view-transition-new(root) {
+  animation-name: page-fade-in;
+}
+
+@keyframes page-fade-out {
+  to { opacity: 0; }
+}
+
+@keyframes page-fade-in {
+  from { opacity: 0; }
+}
+
 /* ============================================
    Scroll Reveal Animations
    ============================================ */
@@ -576,6 +611,10 @@ body strong {
    ============================================ */
 
 @media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+
   *,
   *::before,
   *::after {
@@ -636,4 +675,9 @@ body strong {
   .row {
     break-inside: avoid;
   }
+}
+
+/* Wider publication author list */
+#publications .row-sub {
+  max-width: 900px;
 }

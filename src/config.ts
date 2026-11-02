@@ -4,24 +4,25 @@
 // ============================================
 
 export const site = {
-  title: "Ye Fei",
-  description: "Sample academic homepage — a Ph.D. candidate at Qinglan University. Fictional, shipped with 扉页.",
+  title: "Pengfei Li",
+  description: "Academic homepage. Research in Surgical AI,"+
+              "Vision-Language Model / Agent, Post-Training.",
   /** Your GitHub Pages URL, with no trailing slash. Must not contain "yourname". */
-  url: "https://example.github.io",
+  url: "https://matthewleepf.github.io",
   lang: "en",
   /** Google Analytics ID. Leave "" to disable. */
   analyticsId: "",
   /** Footer link back to the template. Set false to remove it. */
-  showTemplateCredit: true,
+  showTemplateCredit: false,
 };
 
 export const author = {
-  name: "Ye Fei (叶扉)",
+  name: "Pengfei Li ",
   /** Square portrait. The file in this repo is a typographic mark, not a photograph. */
   avatar: "/images/profile.jpg",
-  bio: "Ph.D. Candidate, Qinglan University",
-  location: "Qinglan",
-  email: "ye.fei@example.edu",
+  bio: "Master student, University of Basel",
+  location: "Basel, Switzerland",
+  email: "peng.li@stud.unibas.ch",
   /** Username, or owner/repo. The sample points at this template. */
   github: "MaxwelsDonc/feiye",
   x: "",
@@ -38,13 +39,14 @@ export const navigation = {
     { label: "Experience", href: "/#experience" },
     { label: "Publications", href: "/#publications" },
     { label: "Education", href: "/#education" },
+    { label: "Writing", href: "/blog"},
   ],
 };
 
 export const homePage = {
-  name: "Ye Fei",
-  nameCn: "叶扉",
-  subtitle: "A page should earn the next line.",
+  name: "Pengfei Li",
+  nameCn: "",
+  subtitle: "I build Surgical AI",
   /** Toggle sections on/off. Set false to hide a section entirely. */
   sections: {
     aboutMe: true,
@@ -53,7 +55,7 @@ export const homePage = {
     publications: true,
     education: true,
     projects: false,
-    honors: true,
+    honors: false,
     services: false,
     skills: false,
   },

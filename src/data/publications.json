@@ -4,24 +4,25 @@
       "heading": "Selected Publications",
       "papers": [
         {
-          "title": "The next line: when a measure earns its continuation",
-          "venue": "CHI 2026",
-          "authors": "**Ye Fei**, M. Chen, L. Ortiz"
+          "title": "Hemorrhage First: Rethinking Surgical Safety Assessment via Video-based Blood Loss Estimation",
+          "venue": "SafeSurg workshop MICCAI 2026",
+          "authors": "**Pengfei Li**, Jérôme A. Kurylec, Rao Rohan Girish, Aatharshan Kannathasan, Philip C. Müller, Beat P. Müller, Simon Pezold, Joël L. Lavanchy "
         },
         {
-          "title": "Margins as evidence: how scholars scan a one-page vita",
-          "venue": "DIS 2025",
-          "authors": "**Ye Fei**, A. Rahman"
+          "title": "On Revisiting Entropy for Identifying Mislabeled Images",
+          "venue": "ICML 2026",
+          "authors": "Chunlei Li, Zixuan Zheng, Yilei Shi, Guanglu Dong, **Pengfei Li**, Jingliang Hu, Xiao Xiang Zhu, Lichao Mou"
         }
       ]
     },
+
     {
-      "heading": "Manuscripts",
+      "heading": "",
       "papers": [
         {
-          "title": "A hairline is enough: hierarchy without boxes",
-          "venue": "Draft",
-          "authors": "**Ye Fei**"
+          "title": "",
+          "venue": "",
+          "authors": ""
         }
       ]
     }
